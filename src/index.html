@@ -17,12 +17,12 @@
   <section id="buffet" class="asd dfdf sdf"></section>
   <section id="menu">
     <div class="menu-section">
-      <div class="text-center menu-section-header bg-green-500">
+      <div data-id="entrantes" class="text-center bg-green-500 header">
         <input class="hidden toggle" type="checkbox">
         <span class="lbl-toggle">Entrantes</span>
       </div>
-      <div class="menu-section-content">
-        <ol>
+      <div data-id="entrantes" collapsed style="height: 0;" class="overflow-hidden content">
+        <ul>
           <li class="flex">
             <span id="menu-item-name">Rollitos de primavera</span>
             <span class="flex-1" id="menu-item-spacer"></span>
@@ -53,7 +53,7 @@
             <span class="flex-1" id="menu-item-spacer"></span>
             <span id="menu-item-price">3,55€</span>
           </li>
-        </ol>
+        </ul>
       </div>
     </div>
   </section>
@@ -63,47 +63,50 @@
     <nav></nav>
   </footer>
   <script type="text/javascript">
-    function collapseSection(element) {
-      console.log(element)
-      var sectionHeight = element.ScrollHeight
-      //stop transitions lol
-      var elementTransition = element.style.transition
-      element.style.transition = '';
+    (() => {
+      const menu = [{
+        name: 'Entrantes',
+        items: [{
+          name: 'Rollito ...',
+          price: 1.2
+        }, {
+          name: 'asd',
+          price: 3
+        }]
+      }]
 
-      requestAnimationFrame(() => {
-        element.style.height = sectionHeight + 'px'
-        element.style.transition = elementTransition
+      const collapseTimeout = {}
 
-        requestAnimationFrame(() => {
-          element.style.height = 0 + 'px'
-        })
-      })
-      element.setAttribute('data-collapsed', 'true')
-    }
-    function expandSection(element) {
-      //var sectionHeight = element.ScrollHeight
-      var sectionHeight = 100
-      console.log(sectionHeight);
+      function toggleCollapsible(id) {
+        const contentEl = document.querySelector(`.menu-section .content[data-id="${id}"]`)
+        const collapsed = contentEl.hasAttribute('collapsed')
 
-      element.style.height = sectionHeight + 'px'
-
-      element.addEventListener('transitioned', (e) => {
-        element.removeEventListener('transitioned', arguments.callee)
-        element.style.height = null
-      })
-      element.setAttribute('data-collapsed', 'false')
-    }
-
-    document.querySelector('.menu-section-header').addEventListener('click', (e) => {
-      var section = document.querySelector('.menu-section-content')
-      var isCollapsed = section.getAttribute('data-collapsed') === 'true'
-      if (isCollapsed) {
-        expandSection(section)
-        section.setAttribute('data-collapsed', 'false')
-      } else {
-        collapseSection(section)
+        if (!collapsed) {
+          contentEl.style.height = 0
+          contentEl.setAttribute('collapsed', '')
+          clearTimeout(collapseTimeout[id])
+        } else {
+          const height = contentEl.querySelector('ul').getBoundingClientRect().height
+          contentEl.style.height = `${height}px`
+          contentEl.removeAttribute('collapsed')
+          collapseTimeout[id] = setTimeout(() => contentEl.style.height = '', 5000)
+        }
       }
-    })
+
+      function setupMenuCollapsibles() {
+        const headersEls = [...document.querySelectorAll('.menu-section .header')]
+        headersEls.forEach(headerEl => headerEl.addEventListener('click', e => {
+          const id = e.currentTarget.getAttribute('data-id')
+          toggleCollapsible(id)
+        }))
+      }
+
+      function init() {
+        setupMenuCollapsibles()
+      }
+
+
+    })()
   </script>
 </body>
 
