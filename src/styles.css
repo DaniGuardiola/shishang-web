@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header #main {
+  background-image: url('resources/bg/header.jpg');
+}
