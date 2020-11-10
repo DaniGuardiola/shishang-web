@@ -15,12 +15,96 @@
     <nav></nav>
   </header>
   <section id="buffet" class="asd dfdf sdf"></section>
-  <section id="menu"></section>
+  <section id="menu">
+    <div class="menu-section">
+      <div class="text-center menu-section-header bg-green-500">
+        <input class="hidden toggle" type="checkbox">
+        <span class="lbl-toggle">Entrantes</span>
+      </div>
+      <div class="menu-section-content">
+        <ol>
+          <li class="flex">
+            <span id="menu-item-name">Rollitos de primavera</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">1,20€</span>
+          </li>
+          <li class="flex">
+            <span id="menu-item-name">Rollito de Vietnam (2 unidades)</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">2,50€</span>
+          </li>
+          <li class="flex">
+            <span id="menu-item-name">Empanadilla china (8 piezas)</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">4,25€</span>
+          </li>
+          <li class="flex">
+            <span id="menu-item-name">Tarta de calabaza (8 piezas)</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">4,25€</span>
+          </li>
+          <li class="flex">
+            <span id="menu-item-name">Ensalada de la casa</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">3,55€</span>
+          </li>
+          <li class="flex">
+            <span id="menu-item-name">Ensalada de alga, hongo, tofu, tomate, judiaverde, etc</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">3,55€</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
   <section id="location"></section>
   <section id="reasons"></section>
   <footer>
     <nav></nav>
   </footer>
+  <script type="text/javascript">
+    function collapseSection(element) {
+      console.log(element)
+      var sectionHeight = element.ScrollHeight
+      //stop transitions lol
+      var elementTransition = element.style.transition
+      element.style.transition = '';
+
+      requestAnimationFrame(() => {
+        element.style.height = sectionHeight + 'px'
+        element.style.transition = elementTransition
+
+        requestAnimationFrame(() => {
+          element.style.height = 0 + 'px'
+        })
+      })
+      element.setAttribute('data-collapsed', 'true')
+    }
+    function expandSection(element) {
+      //var sectionHeight = element.ScrollHeight
+      var sectionHeight = 100
+      console.log(sectionHeight);
+
+      element.style.height = sectionHeight + 'px'
+
+      element.addEventListener('transitioned', (e) => {
+        element.removeEventListener('transitioned', arguments.callee)
+        element.style.height = null
+      })
+      element.setAttribute('data-collapsed', 'false')
+    }
+
+    document.querySelector('.menu-section-header').addEventListener('click', (e) => {
+      var section = document.querySelector('.menu-section-content')
+      var isCollapsed = section.getAttribute('data-collapsed') === 'true'
+      if (isCollapsed) {
+        expandSection(section)
+        section.setAttribute('data-collapsed', 'false')
+      } else {
+        collapseSection(section)
+      }
+    })
+  </script>
 </body>
 
 </html>
