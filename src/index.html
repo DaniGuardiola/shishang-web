@@ -259,6 +259,26 @@
             price: 4.40
           }
         ]
+      },
+      {
+        name: 'Menús especiales (solo noches de lunes a jueves)',
+        items: [
+          {
+            header: 'Menú para 2 personas A',
+            name: 'rollo de primavera(2)<br>ensalada china<br>arroz frito 3 delicias/tallarines<br>pollo limón/ternera con salsa de ostras (cualquier sabores)\ncon bebida y postre',
+            price: 16.20
+          },
+          {
+            header: 'Menú para 2 personas B',
+            name: 'rollo de vietnamita (4)<br>arroz frito 3 delicias/fideo chino<br>gambas fritas (12)<br>pollo estilo goa-bao/ternera bambú y setas chinas con bebida y postre',
+            price: 18.20
+          },
+          {
+            header: 'Menú para 3 personas',
+            name: 'rollo de primavera (3)<br>ensalada china<br>arroz frito 3 delicias/tallarines/fideo chino<br>pollo con limón/cerdo agridulce<br>ternera con salsa ostras (seta)<br>gamba con bambú y setas chinas con bebida y postre',
+            price: 29.20
+          },
+        ]
       }
       ]
 
@@ -296,10 +316,19 @@
             const itemEl = document.createElement('li')
             sectionItems.appendChild(itemEl)
 
+            let headerHtml = ''
+            if (sectionItem.header) {
+              headerHtml = `<div class="font-bold">${sectionItem.header}</div>`
+            }
+
+
             itemEl.className = `flex ${itemElementPadding}`
-            itemEl.innerHTML = `<span id="menu-item-name">${sectionItem.name}</span>
+            itemEl.innerHTML += `<span id="menu-item-name">
+              ${headerHtml}
+              <div>${sectionItem.name}</div>
+            </span>
             <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">${sectionItem.price}€</span>`
+            <span id="menu-item-price">${sectionItem.price.toFixed(2)}€</span>`
           })
 
         })
