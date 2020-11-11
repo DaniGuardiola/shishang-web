@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shishang</title>
   <link rel="stylesheet" href="styles.build.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel:light">
 </head>
 
-<body>
+<body class="justify-center max-w-5xl mx-auto">
   <header>
     <div id="contact-bar"></div>
     <div id="logo"></div>
@@ -16,44 +17,12 @@
   </header>
   <section id="buffet" class="asd dfdf sdf"></section>
   <section id="menu">
-    <div class="menu-section">
-      <div data-id="entrantes" class="text-center bg-green-500 header">
-        <input class="hidden toggle" type="checkbox">
-        <span class="lbl-toggle">Entrantes</span>
+    <div class="text-center title pb-8">
+      <div>
+        <h1 class="font-bold menu-title-1">NUESTRA CARTA</h1>
       </div>
-      <div data-id="entrantes" collapsed style="height: 0;" class="overflow-hidden content">
-        <ul>
-          <li class="flex">
-            <span id="menu-item-name">Rollitos de primavera</span>
-            <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">1,20€</span>
-          </li>
-          <li class="flex">
-            <span id="menu-item-name">Rollito de Vietnam (2 unidades)</span>
-            <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">2,50€</span>
-          </li>
-          <li class="flex">
-            <span id="menu-item-name">Empanadilla china (8 piezas)</span>
-            <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">4,25€</span>
-          </li>
-          <li class="flex">
-            <span id="menu-item-name">Tarta de calabaza (8 piezas)</span>
-            <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">4,25€</span>
-          </li>
-          <li class="flex">
-            <span id="menu-item-name">Ensalada de la casa</span>
-            <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">3,55€</span>
-          </li>
-          <li class="flex">
-            <span id="menu-item-name">Ensalada de alga, hongo, tofu, tomate, judiaverde, etc</span>
-            <span class="flex-1" id="menu-item-spacer"></span>
-            <span id="menu-item-price">3,55€</span>
-          </li>
-        </ul>
+      <div>
+        <h2 class="font-bold menu-title-2">¿QUÉ TE APETECE?</h2>
       </div>
     </div>
   </section>
@@ -67,13 +36,274 @@
       const menu = [{
         name: 'Entrantes',
         items: [{
-          name: 'Rollito ...',
-          price: 1.2
+          name: 'Rollitos de primavera',
+          price: 1.20
         }, {
-          name: 'asd',
-          price: 3
+          name: 'Rollito de Vietnam (2 unidades)',
+          price: 2.50
+        }, {
+          name: 'Empanadilla china (8 unidades)',
+          price: 4.25
+        }, {
+          name: 'Tarta de calabaza (8 unidades)',
+          price: 4.25
+        }, {
+          name: 'Ensalada de la casa',
+          price: 3.55
+        }, {
+          name: 'Ensalada de alga, hongo, tofu, tomate, judiaverde, etc',
+          price: 3.55
         }]
-      }]
+      },
+      {
+        name: "sopas",
+        items: [
+          {
+            name: "Sopa de tiburón vegetal",
+            price: 3.25
+          },
+          {
+            name: "Sopa de miso",
+            price: 3.25
+          },
+          {
+            name: "Sopa de maiz",
+            price: 3.25
+          },
+          {
+            name: "Sopa de agripicante",
+            price: 3.25
+          },
+          {
+            name: "Sopa de huevo",
+            price: 3.25
+          }
+        ]
+      },
+      {
+        name: "arroces",
+        items: [
+          {
+            name: "Arroz tres delicias",
+            price: 3.80
+          },
+          {
+            name: "Arroz integral con seta",
+            price: 4.55
+          },
+          {
+            name: "Arroz blanco",
+            price: 1.80
+          },
+          {
+            name: "Arroz frito con verduras",
+            price: 4.05
+          },
+          {
+            name: "Tallarines tres delicias",
+            price: 4.05
+          },
+          {
+            name: "Fideos chinos con verduras",
+            price: 4.55
+          }
+        ]
+      },
+      {
+        name: "carnes vegetarianas",
+        items: [
+          {
+            name: "Arroz tres delicias",
+            price: 3.80
+          },
+          {
+            name: "Arroz integral con seta",
+            price: 4.55
+          },
+          {
+            name: "Arroz blanco",
+            price: 1.80
+          },
+          {
+            name: "Arroz frito con verduras",
+            price: 4.05
+          },
+          {
+            name: "Tallarines tres delicias",
+            price: 4.05
+          },
+          {
+            name: "Fideos chinos con verduras",
+            price: 4.55
+          }
+        ]
+      },
+      {
+        name: "pollo vegano",
+        items: [
+          {
+            name: "Pollo vegano al limon",
+            price: 4.80
+          },
+          {
+            name: "Pollo vegano con almendras",
+            price: 6.80
+          },
+          {
+            name: "Pollo vegano de gongbao",
+            price: 6.80
+          },
+          {
+            name: "Pollo vegano al curry",
+            price: 6.80
+          },
+          {
+            name: "Pollo sesamos vegano salteada",
+            price: 6.80
+          },
+          {
+            name: "Muslo de pollo vegano frito/pieza",
+            price: 1.80
+          },
+          {
+            name: "Filete de pollo vegano al coco rallado",
+            price: 6.80
+          }
+        ]
+      },
+      {
+        name: "platos especiales",
+        items: [
+          {
+            name: "Gamba vegana frita",
+            price: 5.25
+          },
+          {
+            name: "Gamba salteada con picante/ostras",
+            price: 5.25
+          },
+          {
+            name: "Pato vegano con bambu y setas chinas",
+            price: 6.80
+          },
+          {
+            name: "Pato vegano con salsa ostras",
+            price: 6.80
+          },
+          {
+            name: "Pato asado",
+            price: 6.80
+          },
+          {
+            name: "Familias feliz veganos",
+            price: 6.25
+          },
+          {
+            name: "Bola de yi pin",
+            price: 6.80
+          },
+          {
+            name: "1/2 Pollo vegano tailandia",
+            price: 6.80
+          },
+          {
+            name: "1/2 pollo vegano con salsas chinas",
+            price: 6.80
+          },
+          {
+            name: "Cordero vegano salteado",
+            price: 6.80
+          },
+          {
+            name: "Farafe (15 piezas)",
+            price: 5.30
+          },
+          {
+            name: "Bolitas tofu rebozada con verdura",
+            price: 4.80
+          },
+          {
+            name: "Calameres fritos (10 unidades)",
+            price: 5.80
+          },
+          {
+            name: "Aros de cebolla fritos",
+            price: 4.25
+          },
+          {
+            name: "Wan tun frito",
+            price: 3.80
+          },
+          {
+            name: "Sushi (8 piezas)",
+            price: 3.80
+          },
+          {
+            name: "Tempura",
+            price: 3.80
+          },
+          {
+            name: "Verduras salteadas",
+            price: 3.80
+          },
+          {
+            name: "Tofu a la plancha",
+            price: 4.40
+          },
+          {
+            name: "Tofu con salsa soja",
+            price: 4.40
+          },
+          {
+            name: "Mapo tofu (sabor picante)",
+            price: 4.40
+          }
+        ]
+      }
+      ]
+
+      const menuHeaderColor = 'bg-green-500 hover:bg-green-400'
+      const menuHeaderClass = 'px-3 pt-1 my-1 font-bold'
+      const itemElementPadding = 'lg:px-9 px-3 py-2'
+
+      function generateMenu() {
+        const menuEl = document.querySelector('#menu')
+        menu.forEach(menuSection => {
+          const sectionEl = document.createElement('div')
+          sectionEl.className = 'menu-section'
+          menuEl.appendChild(sectionEl)
+
+          const sectionHeader = document.createElement('div')
+          sectionEl.appendChild(sectionHeader)
+
+          sectionHeader.setAttribute('data-id', menuSection.name)
+          sectionHeader.className = `text-center ${menuHeaderColor} ${menuHeaderClass} header title`
+          sectionHeader.innerHTML = `<input class="hidden toggle" type="checkbox">
+        <span class="lbl-toggle">${menuSection.name.toUpperCase()}</span>`
+
+          const sectionContent = document.createElement('div')
+          sectionEl.appendChild(sectionContent)
+
+          sectionContent.className = 'overflow-hidden content'
+          sectionContent.setAttribute('data-id', menuSection.name)
+          sectionContent.setAttribute('collapsed', '')
+          sectionContent.setAttribute('style', 'height: 0;')
+
+          const sectionItems = document.createElement('ul')
+          sectionContent.appendChild(sectionItems)
+
+          menuSection.items.forEach(sectionItem => {
+            const itemEl = document.createElement('li')
+            sectionItems.appendChild(itemEl)
+
+            itemEl.className = `flex ${itemElementPadding}`
+            itemEl.innerHTML = `<span id="menu-item-name">${sectionItem.name}</span>
+            <span class="flex-1" id="menu-item-spacer"></span>
+            <span id="menu-item-price">${sectionItem.price}€</span>`
+          })
+
+        })
+      }
 
       const collapseTimeout = {}
 
@@ -84,12 +314,10 @@
         if (!collapsed) {
           contentEl.style.height = 0
           contentEl.setAttribute('collapsed', '')
-          clearTimeout(collapseTimeout[id])
         } else {
           const height = contentEl.querySelector('ul').getBoundingClientRect().height
           contentEl.style.height = `${height}px`
           contentEl.removeAttribute('collapsed')
-          collapseTimeout[id] = setTimeout(() => contentEl.style.height = '', 5000)
         }
       }
 
@@ -102,9 +330,11 @@
       }
 
       function init() {
+        generateMenu()
         setupMenuCollapsibles()
       }
 
+      init()
 
     })()
   </script>
