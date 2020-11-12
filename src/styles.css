@@ -6,10 +6,6 @@
   transition: height 0.3s ease-in-out;
 }
 
-.menu-section #menu-item-price {
-  margin-top: auto;
-}
-
 .title {
   font-family: Martel;
 }

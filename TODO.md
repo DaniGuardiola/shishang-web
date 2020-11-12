@@ -1,0 +1,8 @@
+- Cursor hover
+- Price margin
+- Proof-reading
+- Price bottom
+- Fonts
+- Hover dark
+- Title styles css -> tailwind
+- Fix centering (container)

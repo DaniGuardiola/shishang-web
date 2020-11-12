@@ -4,9 +4,11 @@ module.exports = {
     purgeLayersByDefault: true
   },
   theme: {
-    colors: {
-      'menu-header': '#a2c037',
-      'menu-header-hover': '#a7c53b',
+    extend: {
+      colors: {
+        green: '#a2c037',
+        'light-green': '#a7c53b'
+      }
     }
   }
 }
