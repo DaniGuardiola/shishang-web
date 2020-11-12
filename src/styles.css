@@ -9,3 +9,6 @@ html {
 header .bg-madera {
   background-image: url('resources/bg/header.jpg');
 }
+.menu-section .content {
+  transition: height 0.3s ease-in-out;
+}
