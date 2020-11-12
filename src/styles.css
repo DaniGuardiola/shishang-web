@@ -5,17 +5,3 @@
 .menu-section .content {
   transition: height 0.3s ease-in-out;
 }
-
-.title {
-  font-family: Martel;
-}
-
-.menu-title-1 {
-  font-size: 3em;
-  letter-spacing: -1px;
-}
-
-.menu-title-2 {
-  font-size: 1.8em;
-  letter-spacing: 8px;
-}

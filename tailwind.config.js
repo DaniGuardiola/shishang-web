@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       colors: {
         green: '#a2c037',
-        'light-green': '#a7c53b'
+        'dark-green': '#97b52b'
+      },
+      fontFamily: {
+        martel: 'Martel'
       }
     }
   }

@@ -284,14 +284,16 @@
 
   const MENU_STYLES = {
     header: [
+      'cursor-pointer',
       'text-center',
-      'bg-menu-header',
-      'hover:bg-menu-header-hover',
+      'bg-green',
+      'hover:bg-dark-green',
       'px-3',
       'pt-2',
       'pb-1',
       'mt-3',
       'font-bold',
+      'font-martel',
       'text-xl'
     ],
     content: ['overflow-hidden', 'content'],
@@ -342,8 +344,8 @@
           : // individual item
             `<div class="flex">
               <span>${name}</span>
-              <div class="flex-grow"></div>
-              <span>${price.toFixed(2)}€</span>
+              <div class="flex-grow w-10"></div>
+              <span class="self-end">${price.toFixed(2)}€</span>
             </div>`
 
         sectionItems.appendChild(itemEl)
