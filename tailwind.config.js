@@ -9,6 +9,9 @@ module.exports = {
         brown: '#27140a',
         green: '#a2c037'
       }
+    },
+    width: {
+      'max-content': 'max-content'
     }
   }
 }
