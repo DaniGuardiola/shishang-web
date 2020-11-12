@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/index.html'],
+  purge: ['./src/index.html', './src/script.js'],
   future: {
     purgeLayersByDefault: true
   },
