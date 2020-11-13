@@ -17,3 +17,19 @@ header .bg-madera {
 #img-granvia {
   background-image: url('resources/img/granvia.png');
 }
+
+#img-platos-1 {
+  background-image: url('resources/img/sushi.jpg');
+}
+
+#img-platos-2 {
+  background-image: url('resources/img/restaurante-vegetariano.jpg');
+}
+
+#img-platos-3 {
+  background-image: url('resources/img/restaurante-vegeno.jpg');
+}
+
+#img-platos-4 {
+  background-image: url('resources/img/shishang.jpg');
+}
