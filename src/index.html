@@ -86,37 +86,33 @@
         <p class="text-4xl font-bold tracking-wide">BUFFET LIBRE</p>
         <p class="text-3xl font-bold tracking-tight">ALL YOU CAN EAT</p>
       </div>
-      <div class="mx-auto">
-        <span class="flex">
-          <div class="mx-2 my-auto text-5xl text-green">☼</div>
-          <div class="mx-2 my-auto text-5xl">
-            <p>9,50€</p>
-          </div>
-          <div class="mx-2 my-auto">
-            <p>Lunes a viernes*</p>
-            <p>de 12:00 a 16:30</p>
-          </div>
-        </span>
-        <span class="flex">
-          <div class="mx-2 my-auto text-5xl text-green">☾</div>
-          <div class="mx-2 my-auto text-5xl">
-            <p>10,95€</p>
-          </div>
-          <div class="mx-2 my-auto">
-            <p>Lunes a viernes*</p>
-            <p>de 19:00 a 24:00</p>
-          </div>
-        </span>
-        <span class="flex">
-          <div class="mx-2 my-auto text-5xl text-green"></div>
-          <div class="mx-2 my-auto text-5xl">
-            <p>10,95€</p>
-          </div>
-          <div class="mx-2 my-auto">
-            <p>Sabados, domingos y festivos*</p>
-            <p>de 12:00 a 16:30 y de 19:00 a 24:00</p>
-          </div>
-        </span>
+      <div class="grid items-center mx-auto justify-items-end"
+        style="grid-template-columns: 80px 150px auto; width: 522px;">
+        <!-- sun icon -->
+        <svg class="w-16 fill-current text-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
+        </svg>
+        <p class="text-5xl">9,50€</p>
+        <p class="ml-8 text-left justify-self-start">Lunes a viernes*<br>de 12:00 a 16:30</p>
+        <!-- moon icon -->
+        <svg class="w-16 fill-current text-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12.34 2.02C6.59 1.82 2 6.42 2 12c0 5.52 4.48 10 10 10 3.71 0 6.93-2.02 8.66-5.02-7.51-.25-12.09-8.43-8.32-14.96z" />
+        </svg>
+        <p class="text-5xl">10,95€</p>
+        <p class="ml-8 text-left justify-self-start">Lunes a viernes*<br>de 19:00 a 24:00</p>
+        <!-- sun & moon icon -->
+        <svg class="w-16 fill-current text-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+        </svg>
+        <p class="text-5xl">10,95€</p>
+        <p class="ml-8 text-left justify-self-start">Sabados, domingos y festivos*<br>de 12:00 a 16:30 y de 19:00 a
+          24:00</p>
       </div>
       <p>*bebida no incluida</p>
     </div>
