@@ -17,6 +17,9 @@ module.exports = {
       },
       width: {
         'max-content': 'max-content'
+      },
+      screens: {
+        xs: '350px'
       }
     }
   }
