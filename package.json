@@ -7,6 +7,6 @@
   "scripts": {
     "build-css-dev": "tailwindcss build src/styles.css -o src/styles.build.css",
     "build-css": "mkdir -p build && NODE_ENV=production tailwindcss build src/styles.css -o build/styles.build.css",
-    "build": "rm -rf build && mkdir build && cp src/index.html build && cp -r src/resources build && yarn build-css"
+    "build": "rm -rf build && cp -r src build && rm build/styles.css && yarn build-css"
   }
 }
