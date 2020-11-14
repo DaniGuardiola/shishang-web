@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shishang</title>
   <link rel="stylesheet" href="styles.build.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,13 +15,59 @@
     <div id="logo"></div>
     <nav></nav>
   </header>
-  <section id="buffet" class="asd dfdf sdf"></section>
+  <section id="buffet"></section>
+
   <section id="menu"></section>
-  <section id="location"></section>
-  <section id="reasons"></section>
+
+  <section id="location" class="bg-light-brown text-center">
+    <div class="py-4 container mx-auto">
+      <p class="text-6xl font-bold leading-none">VISÍTANOS</p>
+      <p class="text-4xl leading-none">ESTAMOS MUY CERCA</p>
+      <div class="mt-5 md:flex mx-auto max-w-3xl px-6">
+        <p>Calle Concepción Arenal, 3 28004 MADRID</p>
+        <div class="flex-grow"></div>
+        <p class="text-white opacity-75">Reservas: <a class="font-bold" href="tel:34915231220">91 523 12 20</a> - <a
+            class="font-bold" href="mailto:shishang@shishang.es">shishang@shishang.es</a></p>
+      </div>
+    </div>
+    <div class="gmap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1073.9042119181322!2d-3.7047678046515014!3d40.42081639275107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d08a875e3%3A0x65565bd9b5a5f120!2sSHI-SHANG!5e0!3m2!1sen!2ses!4v1605204923732!5m2!1sen!2ses"></iframe>
+    </div>
+  </section>
+
+  <section id="reasons" class="bg-light-yellow text-center">
+    <div class="py-4 mx-auto">
+      <p class="text-6xl font-bold leading-none">DIEZ RAZONES</p>
+      <p class="text-4xl leading-none">PARA SER VEGANO</p>
+      <div class="mt-8">
+        <img src="./resources/conejo.png" class="mx-auto">
+      </div>
+      <div class="mt-6">
+        <div id="reason" class="whitespace-pre-line"></div>
+      </div>
+    </div>
+  </section>
   <footer>
     <nav></nav>
   </footer>
+  <script>
+    let reasons = ["No es necesario matar animales para alimentarse.\r\nLos animales tienen el mismo derecho a la vida.", "Las dietas de bajo contenido graso previenen las enfermedades cardiacas.", "Las grasas vegetales polisaturadas tienden a disminuir la presión arterial.", "La alimentación vegana o vegetariana facilita la expulsión\r\nde los residuos alimenticios y la eliminación de toxinas,\r\npreviniendo así el cáncer de colon.", "Una dieta vegetariana o vegana variada\r\ny debidamente equilibrada aporta los niveles necesarios\r\nde nutrientes que el organismo necesita.", "Una dieta basada principalmente en cereales, frutas\r\ny verduras ayuda a controlar la diabetes.", "La comida vegetariana o vegana suele ser más económica que el resto.", "Las pastas y los cereales son una buena fuente\r\nde energía, debido a la gran cantidad\r\nde carbohidratos que contienen.", "Las personas que sufren de colesterol alto\r\npodrían beneficiarse de los efectos de una dieta\r\nvegana o vegetariana pobre en grasa y rica en fibra.", "Además de ser ligera, digestiva y buena para la salud,\r\nuna dieta vegana con algo de imaginación no resulta monótona."]
+    let counter = 0;
+    let currentReason = document.getElementById("reason");
+
+    change()
+
+    setInterval(change, 1000);
+
+    function change() {
+      currentReason.textContent = reasons[counter];
+      counter++;
+      if (counter >= reasons.length) {
+        counter = 0;
+      }
+    }
+  </script>
 </body>
 
 </html>
