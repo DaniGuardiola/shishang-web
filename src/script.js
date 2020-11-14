@@ -2,6 +2,19 @@
   // data
   // ----
 
+  const REASONS = [
+    'No es necesario matar animales para alimentarse.\r\nLos animales tienen el mismo derecho a la vida.',
+    'Las dietas de bajo contenido graso previenen las enfermedades cardiacas.',
+    'Las grasas vegetales polisaturadas tienden a disminuir la presión arterial.',
+    'La alimentación vegana o vegetariana facilita la expulsión\r\nde los residuos alimenticios y la eliminación de toxinas,\r\npreviniendo así el cáncer de colon.',
+    'Una dieta vegetariana o vegana variada\r\ny debidamente equilibrada aporta los niveles necesarios\r\nde nutrientes que el organismo necesita.',
+    'Una dieta basada principalmente en cereales, frutas\r\ny verduras ayuda a controlar la diabetes.',
+    'La comida vegetariana o vegana suele ser más económica que el resto.',
+    'Las pastas y los cereales son una buena fuente\r\nde energía, debido a la gran cantidad\r\nde carbohidratos que contienen.',
+    'Las personas que sufren de colesterol alto\r\npodrían beneficiarse de los efectos de una dieta\r\nvegana o vegetariana pobre en grasa y rica en fibra.',
+    'Además de ser ligera, digestiva y buena para la salud,\r\nuna dieta vegana con algo de imaginación no resulta monótona.'
+  ]
+
   const MENU_DATA = [
     {
       name: 'Entrantes',
@@ -392,12 +405,32 @@
     )
   }
 
+  // reasons
+  // -------
+
+  let counter = 0
+  let currentReason = document.getElementById('reason')
+
+  function change () {
+    currentReason.textContent = REASONS[counter]
+    counter++
+    if (counter >= REASONS.length) {
+      counter = 0
+    }
+  }
+
+  function startReasons () {
+    change()
+    setInterval(change, 1000)
+  }
+
   // initialization
   // --------------
 
   function init () {
     generateMenu()
     setupMenuCollapsibles()
+    startReasons()
   }
 
   init()
