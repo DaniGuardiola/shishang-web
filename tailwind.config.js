@@ -10,7 +10,8 @@ module.exports = {
         green: '#a2c037',
         'dark-green': '#97b52b',
         'light-brown': '#AF8F7E',
-        'light-yellow': '#E8FF8B'
+        'light-yellow': '#E8FF8B',
+        'dark-brown': '#27140A'
       },
       fontFamily: {
         martel: 'Martel'
@@ -20,6 +21,9 @@ module.exports = {
       },
       screens: {
         xs: '350px'
+      },
+      spacing: {
+        '96': '24rem'
       }
     }
   }

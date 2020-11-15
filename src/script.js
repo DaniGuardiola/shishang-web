@@ -307,7 +307,8 @@
       'mt-3',
       'font-bold',
       'font-martel',
-      'text-xl'
+      'text-xl',
+      'hover:underline'
     ],
     content: ['overflow-hidden', 'content'],
     item: ['lg:pl-8', 'lg:pr-10', 'px-3', 'py-3'],
