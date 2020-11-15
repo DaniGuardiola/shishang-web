@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <header>
     <div class="bg-brown">
       <div class="container flex flex-1 px-6 py-2 mx-auto text-white">
@@ -79,86 +78,112 @@
     </nav>
   </header>
 
-  <section id="buffet" class="container py-8 mx-auto sm:py-16 lg:flex">
-    <div class="flex-1">
-      <img class="mx-auto xl:w-11/12" src="resources/img/buffet-libre.jpg" alt="Buffet libre" />
+  <div id="img-ricefields" class="h-64 bg-fixed bg-center bg-no-repeat bg-cover"></div>
+  <section id="buffet" class="">
+    <div class="justify-center py-8 mx-auto sm:flex items-center text-center">
+      ESTAMOS ABIERTOS de lunes a domingo
+      <div class="flex justify-center">
+        <!-- sun icon -->
+        <svg class="flex-shrink-0 w-6 mx-1 fill-current text-green" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" fill="#fff">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
+        </svg>
+        12.00 a 16.30
+        <!-- moon icon -->
+        <svg class="flex-shrink-0 w-6 ml-2 mr-1 fill-current text-green" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" fill="#fff">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12.34 2.02C6.59 1.82 2 6.42 2 12c0 5.52 4.48 10 10 10 3.71 0 6.93-2.02 8.66-5.02-7.51-.25-12.09-8.43-8.32-14.96z" />
+        </svg>
+        19.00 a 24.00
+      </div>
     </div>
-    <div class="flex-1 pt-16 text-center lg:pt-0">
-      <div class="px-4 font-martel">
-        <p class="text-4xl font-bold leading-none tracking-wide sm:text-6xl">BUFFET LIBRE</p>
-        <p class="text-3xl tracking-tight sm:text-4xl">ALL YOU CAN EAT</p>
+    <div class="container py-8 mx-auto sm:py-16 lg:flex">
+      <div class="flex-1">
+        <img class="mx-auto xl:w-11/12" src="resources/img/buffet-libre.jpg" alt="Buffet libre" />
       </div>
-      <div class="flex pt-8">
-        <div class="flex-grow"></div>
-        <div class="px-4">
-          <div class="flex items-center mt-4 sm:mt-0">
-            <!-- sun icon -->
-            <svg class="flex-shrink-0 w-0 fill-current sm:w-16 text-green" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24" fill="#fff">
-              <path d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
-            </svg>
-            <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
-              9,50€
-            </p>
-            <p class="ml-4 text-left sm:ml-8">
-              Lunes a viernes*<br />de 12:00 a 16:30
-            </p>
-          </div>
-          <div class="flex items-center mt-4 sm:mt-0">
-            <!-- moon icon -->
-            <svg class="flex-shrink-0 w-0 fill-current sm:w-16 text-green" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24" fill="#fff">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M12.34 2.02C6.59 1.82 2 6.42 2 12c0 5.52 4.48 10 10 10 3.71 0 6.93-2.02 8.66-5.02-7.51-.25-12.09-8.43-8.32-14.96z" />
-            </svg>
-            <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
-              10,95€
-            </p>
-            <p class="ml-4 text-left sm:ml-8">
-              Lunes a viernes*<br />de 19:00 a 24:30
-            </p>
-          </div>
-          <div class="flex items-center mt-4 sm:mt-0">
-            <!-- sun & moon icon -->
-            <svg class="flex-shrink-0 w-0 fill-current sm:w-16 text-green" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24" fill="#fff">
-              <path d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
-            </svg>
-            <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
-              10,95€
-            </p>
-            <p class="ml-4 text-left sm:ml-8">
-              Sabados, domingos y festivos*<br />de 12:00 a 16:30 y de 19:00 a
-              24:00
-            </p>
-          </div>
-          <div class="flex items-center mt-4 sm:mt-0">
-            <!-- moon icon -->
-            <!-- sun & moon icon -->
-            <div class="flex-shrink-0 w-0 sm:w-16"></div>
-            <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
-              6,00€
-            </p>
-            <p class="ml-4 text-left sm:ml-8">Niños (4-8 años)*</p>
-          </div>
-          <div class="flex items-center mt-4 sm:mt-0">
-            <!-- moon icon -->
-            <!-- sun & moon icon -->
-            <div class="flex-shrink-0 w-0 sm:w-16"></div>
-            <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
-              GRATIS
-            </p>
-            <p class="ml-4 text-left sm:ml-8">Niños (menos de 4 años)*</p>
-          </div>
+      <div class="flex-1 pt-16 text-center lg:pt-0">
+        <div class="px-4 font-martel">
+          <p class="text-4xl font-bold leading-none tracking-wide sm:text-6xl">
+            BUFFET LIBRE
+          </p>
+          <p class="text-3xl tracking-tight sm:text-4xl">ALL YOU CAN EAT</p>
         </div>
-        <div class="flex-grow"></div>
+        <div class="flex pt-8">
+          <div class="flex-grow"></div>
+          <div class="px-4">
+            <div class="flex items-center mt-4 sm:mt-0">
+              <!-- sun icon -->
+              <svg class="flex-shrink-0 w-0 fill-current sm:w-16 text-green" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="#fff">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
+              </svg>
+              <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
+                9,50€
+              </p>
+              <p class="ml-4 text-left sm:ml-8">
+                Lunes a viernes*<br />de 12:00 a 16:30
+              </p>
+            </div>
+            <div class="flex items-center mt-4 sm:mt-0">
+              <!-- moon icon -->
+              <svg class="flex-shrink-0 w-0 fill-current sm:w-16 text-green" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="#fff">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12.34 2.02C6.59 1.82 2 6.42 2 12c0 5.52 4.48 10 10 10 3.71 0 6.93-2.02 8.66-5.02-7.51-.25-12.09-8.43-8.32-14.96z" />
+              </svg>
+              <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
+                10,95€
+              </p>
+              <p class="ml-4 text-left sm:ml-8">
+                Lunes a viernes*<br />de 19:00 a 24:30
+              </p>
+            </div>
+            <div class="flex items-center mt-4 sm:mt-0">
+              <!-- sun & moon icon -->
+              <svg class="flex-shrink-0 w-0 fill-current sm:w-16 text-green" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="#fff">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z" />
+              </svg>
+              <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
+                10,95€
+              </p>
+              <p class="ml-4 text-left sm:ml-8">
+                Sabados, domingos y festivos*<br />de 12:00 a 16:30 y de 19:00
+                a 24:00
+              </p>
+            </div>
+            <div class="flex items-center mt-4 sm:mt-0">
+              <!-- moon icon -->
+              <!-- sun & moon icon -->
+              <div class="flex-shrink-0 w-0 sm:w-16"></div>
+              <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
+                6,00€
+              </p>
+              <p class="ml-4 text-left sm:ml-8">Niños (4-8 años)*</p>
+            </div>
+            <div class="flex items-center mt-4 sm:mt-0">
+              <!-- moon icon -->
+              <!-- sun & moon icon -->
+              <div class="flex-shrink-0 w-0 sm:w-16"></div>
+              <p class="flex-shrink-0 w-32 text-4xl text-right sm:text-5xl sm:w-40">
+                GRATIS
+              </p>
+              <p class="ml-4 text-left sm:ml-8">Niños (menos de 4 años)*</p>
+            </div>
+          </div>
+          <div class="flex-grow"></div>
+        </div>
+        <p class="mt-8">*bebida no incluida</p>
       </div>
-      <p class="mt-8">*bebida no incluida</p>
     </div>
   </section>
 
@@ -185,15 +210,20 @@
   <div class="h-2 bg-light-brown"></div>
   <section id="location" class="text-center bg-light-brown">
     <div class="px-4 py-12 mx-auto sm:container">
-      <p class="text-5xl font-bold leading-none sm:text-6xl font-martel">VISÍTANOS</p>
-      <p class="text-3xl leading-none sm:text-4xl font-martel">ESTAMOS MUY CERCA</p>
+      <p class="text-5xl font-bold leading-none sm:text-6xl font-martel">
+        VISÍTANOS
+      </p>
+      <p class="text-3xl leading-none sm:text-4xl font-martel">
+        ESTAMOS MUY CERCA
+      </p>
       <div class="max-w-3xl px-6 mx-auto mt-5 md:flex">
         <a class="hover:underline" href="https://goo.gl/maps/wm19ZFuygyp5cAPL8">Calle Concepción Arenal, 3 28004
           MADRID</a>
         <div class="flex-grow"></div>
         <p class="text-white opacity-75">
           Reservas:
-          <a class="font-bold hover:underline" href="tel:+34915231220">91 523 12 20</a> -
+          <a class="font-bold hover:underline" href="tel:+34915231220">91 523 12 20</a>
+          -
           <a class="font-bold hover:underline" href="mailto:shishang@shishang.es">shishang@shishang.es</a>
         </p>
       </div>
@@ -206,8 +236,12 @@
 
   <section id="reasons" class="p-16 text-center bg-light-yellow">
     <div class="py-4 mx-auto">
-      <p class="text-5xl font-bold leading-none sm:text-6xl font-martel">DIEZ RAZONES</p>
-      <p class="text-3xl leading-none sm:text-4xl font-martel">PARA SER VEGANO</p>
+      <p class="text-5xl font-bold leading-none sm:text-6xl font-martel">
+        DIEZ RAZONES
+      </p>
+      <p class="text-3xl leading-none sm:text-4xl font-martel">
+        PARA SER VEGANO
+      </p>
       <div class="mt-8">
         <img src="./resources/conejo.png" class="mx-auto" />
       </div>
@@ -222,7 +256,6 @@
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 
 </html>
