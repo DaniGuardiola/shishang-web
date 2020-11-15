@@ -39,3 +39,8 @@ header .bg-madera {
   height: 410px;
   position: relative;
 }
+
+.footer-menu a {
+  font-size: 28px;
+  font-weight: bold;
+}
