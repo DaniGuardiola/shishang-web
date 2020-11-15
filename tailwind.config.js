@@ -20,6 +20,9 @@ module.exports = {
       },
       screens: {
         xs: '350px'
+      },
+      spacing: {
+        '96': '24rem'
       }
     }
   }
