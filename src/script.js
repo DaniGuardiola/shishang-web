@@ -3,16 +3,16 @@
   // ----
 
   const REASONS = [
-    'No es necesario matar animales para alimentarse.\r\nLos animales tienen el mismo derecho a la vida.',
+    'No es necesario matar animales para alimentarse.Los animales tienen el mismo derecho a la vida.',
     'Las dietas de bajo contenido graso previenen las enfermedades cardiacas.',
     'Las grasas vegetales polisaturadas tienden a disminuir la presión arterial.',
-    'La alimentación vegana o vegetariana facilita la expulsión\r\nde los residuos alimenticios y la eliminación de toxinas,\r\npreviniendo así el cáncer de colon.',
-    'Una dieta vegetariana o vegana variada\r\ny debidamente equilibrada aporta los niveles necesarios\r\nde nutrientes que el organismo necesita.',
-    'Una dieta basada principalmente en cereales, frutas\r\ny verduras ayuda a controlar la diabetes.',
+    'La alimentación vegana o vegetariana facilita la expulsión de los residuos alimenticios y la eliminación de toxinas, previniendo así el cáncer de colon.',
+    'Una dieta vegetariana o vegana variada y debidamente equilibrada aporta los niveles necesarios de nutrientes que el organismo necesita.',
+    'Una dieta basada principalmente en cereales, frutas y verduras ayuda a controlar la diabetes.',
     'La comida vegetariana o vegana suele ser más económica que el resto.',
-    'Las pastas y los cereales son una buena fuente\r\nde energía, debido a la gran cantidad\r\nde carbohidratos que contienen.',
-    'Las personas que sufren de colesterol alto\r\npodrían beneficiarse de los efectos de una dieta\r\nvegana o vegetariana pobre en grasa y rica en fibra.',
-    'Además de ser ligera, digestiva y buena para la salud,\r\nuna dieta vegana con algo de imaginación no resulta monótona.'
+    'Las pastas y los cereales son una buena fuente de energía, debido a la gran cantidad de carbohidratos que contienen.',
+    'Las personas que sufren de colesterol alto podrían beneficiarse de los efectos de una dieta vegana o vegetariana pobre en grasa y rica en fibra.',
+    'Además de ser ligera, digestiva y buena para la salud, una dieta vegana con algo de imaginación no resulta monótona.'
   ]
 
   const MENU_DATA = [
@@ -422,7 +422,7 @@
 
   function startReasons () {
     change()
-    setInterval(change, 1000)
+    setInterval(change, 2500)
   }
 
   // initialization
