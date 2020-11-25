@@ -18,6 +18,10 @@ header .bg-madera {
   background-image: url('resources/img/granvia.png');
 }
 
+#img-ricefields {
+  background-image: url('resources/img/ricefields.jpg');
+}
+
 #img-platos-1 {
   background-image: url('resources/img/sushi.jpg');
 }
