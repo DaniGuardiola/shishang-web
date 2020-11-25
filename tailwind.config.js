@@ -23,6 +23,8 @@ module.exports = {
         xs: '350px'
       },
       spacing: {
+        '72': '18rem',
+        '80': '20rem',
         '96': '24rem'
       }
     }

@@ -234,8 +234,8 @@
     </div>
   </section>
 
-  <section id="reasons" class="h-500px p-16 text-center bg-light-yellow">
-    <div class="py-4 mx-auto">
+  <section id="reasons" class="p-8 text-center bg-light-yellow">
+    <div class="py-4 mx-auto container">
       <p class="text-5xl leading-none sm:text-6xl font-martel">
         DIEZ RAZONES
       </p>
@@ -245,53 +245,46 @@
       <div class="mt-8">
         <img src="./resources/conejo.png" class="mx-auto" />
       </div>
-      <div class="mx-auto w-96 mt-6">
-        <div id="reason" class="whitespace-pre-line"></div>
+      <div class="flex h-80 sm:h-40 md:h-32 lg:h-24 items-center justify-center mt-6 mx-auto">
+        <div id="reason" class="transition-opacity duration-1000 text-xl sm:text-2xl font-martel whitespace-pre-line">
+        </div>
       </div>
+    </div>
   </section>
 
   <footer class="footer-info text-center text-white bg-dark-brown">
-    <nav class="pt-2 space-x-2">
-      <div class="footer-menu inline-block">
-        <a href="#buffet">BUFFET</a>
-      </div>
-      <div class="footer-menu inline-block"><a href="#menu">CARTA</a></div>
-      <div class="footer-menu inline-block">
-        <a href="#location">VISÍTANOS</a>
-      </div>
-      <div class="footer-menu inline-block">
-        <a href="#reasons">10 RAZONES</a>
-      </div>
+    <nav class="flex flex-col p-8 text-xl text-center sm:p-6 sm:block font-martel font-bold">
+      <a class="hover:underline" href="#buffet">BUFFET</a>
+      <a class="mt-8 sm:mt-0 sm:ml-8 hover:underline" href="#menu">CARTA</a>
+      <a class="my-8 sm:my-0 sm:mx-8 hover:underline" href="#location">VISÍTANOS</a>
+      <a class="hover:underline" href="#reasons">10 RAZONES</a>
     </nav>
-    <p class="lg:pr-1">Estamos abiertos de lunes a domingo</p>
-    <div class="sm:flex-col justify-center mx-auto">
-      <!--sun icon-->
-      <div class="inline-flex">
-        <svg class="flex-shrink-0 fill-current w-6 text-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#fff">
-          <path d="M0 0h24v24H0z" fill="none"></path>
+    <div class="justify-center py-8 mx-auto sm:flex items-center text-center">
+      ESTAMOS ABIERTOS de lunes a domingo
+      <div class="flex justify-center">
+        <!-- sun icon -->
+        <svg class="flex-shrink-0 w-6 mx-1 fill-current text-green" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" fill="#fff">
+          <path d="M0 0h24v24H0z" fill="none" />
           <path
-            d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z">
-          </path>
+            d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
         </svg>
-        <div>
-          12.00 a 16.30 h.
-        </div>
-      </div>
-      <div class="inline-flex">
+        12.00 a 16.30
         <!-- moon icon -->
-        <svg class="flex-shrink-0 fill-current w-6 text-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          fill="#fff">
+        <svg class="flex-shrink-0 w-6 ml-2 mr-1 fill-current text-green" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" fill="#fff">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
             d="M12.34 2.02C6.59 1.82 2 6.42 2 12c0 5.52 4.48 10 10 10 3.71 0 6.93-2.02 8.66-5.02-7.51-.25-12.09-8.43-8.32-14.96z" />
         </svg>
-        <div>
-          19.00 a 24.00 h.
-        </div>
+        19.00 a 24.00
       </div>
     </div>
     <img src="resources/certificados.png" class="mx-auto py-3" />
+    <p class="text-sm hover:underline py-8"><a href="https://github.com/DaniGuardiola/shishang-web"
+        target="_blank">Desarrollado por
+        Dani
+        Guardiola & friends</a></p>
   </footer>
 
   <script src="script.js"></script>

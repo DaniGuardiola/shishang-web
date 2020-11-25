@@ -3,7 +3,7 @@
   // ----
 
   const REASONS = [
-    'No es necesario matar animales para alimentarse.Los animales tienen el mismo derecho a la vida.',
+    'No es necesario matar animales para alimentarse. Los animales tienen el mismo derecho a la vida.',
     'Las dietas de bajo contenido graso previenen las enfermedades cardiacas.',
     'Las grasas vegetales polisaturadas tienden a disminuir la presión arterial.',
     'La alimentación vegana o vegetariana facilita la expulsión de los residuos alimenticios y la eliminación de toxinas, previniendo así el cáncer de colon.',
@@ -412,17 +412,24 @@
   let counter = 0
   let currentReason = document.getElementById('reason')
 
-  function change () {
-    currentReason.textContent = REASONS[counter]
-    counter++
-    if (counter >= REASONS.length) {
-      counter = 0
-    }
+  function change (first) {
+    if (!first) currentReason.classList.add('opacity-0')
+    setTimeout(
+      function () {
+        currentReason.textContent = REASONS[counter]
+        counter++
+        if (counter >= REASONS.length) {
+          counter = 0
+        }
+        currentReason.classList.remove('opacity-0')
+      },
+      first ? 0 : 1000
+    )
   }
 
   function startReasons () {
-    change()
-    setInterval(change, 2500)
+    change(true)
+    setInterval(change, 6000)
   }
 
   // initialization
