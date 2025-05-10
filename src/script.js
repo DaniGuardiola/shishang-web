@@ -436,8 +436,8 @@
   // --------------
 
   function init () {
-    generateMenu()
-    setupMenuCollapsibles()
+    // generateMenu()
+    // setupMenuCollapsibles()
     startReasons()
   }
 
