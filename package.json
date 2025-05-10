@@ -8,5 +8,6 @@
     "build-css-dev": "tailwindcss build src/styles.css -o src/styles.build.css",
     "build-css": "mkdir -p build && NODE_ENV=production tailwindcss build src/styles.css -o build/styles.build.css",
     "build": "rm -rf build && cp -r src build && rm build/styles.css && yarn build-css"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
